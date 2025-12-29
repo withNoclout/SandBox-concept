@@ -43,7 +43,8 @@ class AIMO3Gateway(kaggle_evaluation.core.templates.Gateway):
 
         for row in test.iter_slices(n_rows=1):
             # Generate a problem instance and the validation id
-            yield row, row.select('id')
+            sample_submission = row.select('id').with_columns(pl.lit(0).alias('answer'))
+            yield (row, sample_submission), row.select('id')
 
     def competition_specific_validation(
         self, prediction_batch, row_ids, data_batch

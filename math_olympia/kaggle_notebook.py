@@ -213,6 +213,10 @@ def predict(test: pl.DataFrame, sample_submission: pl.DataFrame):
     else:
         print("-> No valid answers found. Guessing 0.")
 
+    # Ensure sample_submission is a DataFrame
+    if isinstance(sample_submission, pl.Series):
+        sample_submission = sample_submission.to_frame()
+    
     return sample_submission.with_columns(pl.lit(final_answer).alias('answer'))
 
 # Start Server
