@@ -217,7 +217,12 @@ def predict(test: pl.DataFrame, sample_submission: pl.DataFrame):
     if isinstance(sample_submission, pl.Series):
         sample_submission = sample_submission.to_frame()
     
-    return sample_submission.with_columns(pl.lit(final_answer).alias('answer'))
+    # Build a clean submission DataFrame with correct column names and types
+    submission_df = pl.DataFrame({
+        "id": [problem_id],
+        "answer": [int(final_answer)],
+    })
+    return submission_df
 
 # Start Server
 server = kaggle_evaluation.aimo_3_inference_server.AIMO3InferenceServer(predict)
