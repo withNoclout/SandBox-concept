@@ -1,0 +1,16 @@
+node_modules
+.DS_Store
+.venv/
+.next/
+__pycache__/
+*.pyc
+
+# Data
+*.csv
+*.zip
+*.parquet
+
+# Models
+*.pt
+*.pth
+saved_model/
