@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --background: #141619;
+    --foreground: #d9d7c5;
+    --muted: #8f9196;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: 'IBM Plex Mono', monospace;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Selection color - Technical Green/Grey */
+::selection {
+    background: #d9d7c5;
+    color: #141619;
+}
+
+/* Noise Texture Overlay */
+.bg-noise {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 50;
+    opacity: 0.05;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Hand-Drawn Border Effect via CSS Radius */
+.sketch-border {
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+    transition: all 0.3s ease;
+}
+
+/* Animations */
+@keyframes breathe {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-3px);
+    }
+}
+
+@keyframes drift {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-breathe {
+    animation: breathe 5s ease-in-out infinite;
+}
+
+.animate-drift {
+    animation: drift 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.delay-100 {
+    animation-delay: 100ms;
+}
+
+.delay-200 {
+    animation-delay: 200ms;
+}
+
+.delay-300 {
+    animation-delay: 300ms;
+}
+
+.delay-500 {
+    animation-delay: 500ms;
+}
+
+/* Hover Interaction */
+.hover-sketch:hover {
+    transform: translateY(-2px);
+}
+
+/* Form elements reset */
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #141619;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4a4c52;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8f9196;
+}
