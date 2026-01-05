@@ -1,0 +1,9 @@
+=== House Price Prediction V6 (Linear Heavy) ===
+Strategy: Prioritize Linear Models to prevent Overfitting.
+Weights:
+- Lasso: 25%
+- Ridge: 25%
+- ElasticNet: 10%
+- GradientBoosting: 20%
+- XGBoost: 20%
+Total: 60% Linear / 40% Tree

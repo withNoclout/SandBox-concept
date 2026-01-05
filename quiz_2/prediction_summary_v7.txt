@@ -1,0 +1,5 @@
+=== Titanic V7 (The Swarm) ===
+Models Trained: 100
+Strategy: Bagging (Averaging 100 Seeded XGBoost Models)
+Base Model: V6 Optimized XGBoost
+Goal: Maximum Stability / Variance Reduction

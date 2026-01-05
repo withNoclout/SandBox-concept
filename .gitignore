@@ -14,3 +14,5 @@ __pycache__/
 *.pt
 *.pth
 saved_model/
+autogluon_model/
+*.pkl

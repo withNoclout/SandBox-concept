@@ -1,0 +1,5 @@
+=== Titanic V8 (The Minimalist) ===
+CV Accuracy: 0.81369
+Features: Raw Data Only (No Titles/Decks)
+Models: Logistic Regression + Random Forest (Baseline)
+Strategy: Simplicity & Robustness

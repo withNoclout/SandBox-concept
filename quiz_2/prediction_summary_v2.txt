@@ -1,0 +1,4 @@
+=== Titanic V2 (Feature Engineering + Boosting) ===
+CV Accuracy: 0.81707
+New Features: Title, FamilySize, IsAlone, AgeBin, FareBin
+Models: Random Forest + GradientBoosting + XGBoost

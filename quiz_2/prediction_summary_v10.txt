@@ -1,0 +1,4 @@
+=== Titanic V10 (The Grand Blend) ===
+Strategy: Weighted Average of Probabilities
+Weights: 0.7 * V8 (Minimalist) + 0.3 * V6 (Imitator)
+Rationale: Combining the stability of Linear/RF with the complexity of Oblique XGBoost.

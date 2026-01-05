@@ -1,0 +1,6 @@
+=== House Price Prediction V3 (Elite Ensemble) ===
+Validation RMSLE: 0.12026
+Techniques Used:
+1. Log-Transformation of Target (Minimizes error)
+2. Box-Cox Transformation of Skewed Features
+3. Ensemble: XGBoost (50%) + Lasso (30%) + Ridge (20%)

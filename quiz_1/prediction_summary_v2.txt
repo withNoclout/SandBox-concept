@@ -1,0 +1,8 @@
+=== House Price Prediction V2 (XGBoost + Feature Engineering) ===
+Validation MAE: $15,540.04
+(Lower is better. Compare with V1 MAE: $16,508)
+
+Key Improvements:
+1. Added 'TotalSF' (Total Square Footage)
+2. Added 'TotalBath' (Total Bathrooms)
+3. Used XGBoost (Gradient Boosting) instead of Random Forest

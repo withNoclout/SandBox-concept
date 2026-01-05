@@ -1,0 +1,4 @@
+=== Titanic Baseline (Random Forest) ===
+Validation Accuracy: 0.77654
+Features: Pclass, Sex, SibSp, Parch, Fare, Embarked, Age
+Strategy: Basic Imputation + One-Hot Encoding + Random Forest

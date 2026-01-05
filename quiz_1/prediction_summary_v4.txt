@@ -1,0 +1,6 @@
+=== House Price Prediction V4 (Grandmaster Stack) ===
+CV RMSLE: 0.11373
+Techniques Used:
+1. Outlier Removal (GrLivArea > 4000)
+2. Stacking Ensemble (XGB + LGBM + CatBoost + GBR + Linear)
+3. Meta-Model: XGBoost

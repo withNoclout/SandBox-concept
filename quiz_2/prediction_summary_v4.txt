@@ -1,0 +1,4 @@
+=== Titanic V4 (Intermediate ML: Pipelines + Tuned XGB) ===
+Best CV Score: 0.84739
+Best Params: {'model__learning_rate': 0.1, 'model__max_depth': 3, 'model__n_estimators': 500}
+Technique: sklearn Pipeline + ColumnTransformer + GridSearchCV

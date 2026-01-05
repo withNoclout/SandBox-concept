@@ -1,0 +1,7 @@
+=== House Price Prediction V7 (The Specialist) ===
+Strategy: Dual Pipeline (One-Hot for Linear, Label for Trees).
+Weights:
+- Lasso (One-Hot): 25%
+- Ridge (One-Hot): 25%
+- GBR (Label): 25%
+- XGB (Label): 25%

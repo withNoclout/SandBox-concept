@@ -1,0 +1,4 @@
+=== Titanic V5 (The Hybrid: RF + KNN) ===
+CV Accuracy: 0.82828
+Models: Random Forest (Tuned) + KNN (n=10)
+Strategy: Diversity (Tree Logic + Distance Logic)

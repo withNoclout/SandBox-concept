@@ -1,0 +1,4 @@
+=== House Price Prediction V5 (Optuna Tuned) ===
+Best XGB Score (CV): 0.11452
+Best LGB Score (CV): 0.11466
+Strategy: Optuna Tuning + Weighted Ensemble (XGB+LGB+Cat+Lasso+Ridge)

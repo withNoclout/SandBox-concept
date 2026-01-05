@@ -1,0 +1,24 @@
+=== House Price Prediction Summary ===
+Model: Random Forest Regressor
+Validation Mean Absolute Error: $16,508.95
+
+Top 10 Most Important Features:
+     Feature  Importance
+ OverallQual    0.583204
+   GrLivArea    0.107832
+ TotalBsmtSF    0.039471
+    2ndFlrSF    0.033404
+  BsmtFinSF1    0.027074
+    1stFlrSF    0.024301
+  GarageCars    0.018377
+     LotArea    0.013959
+  GarageArea    0.013745
+TotRmsAbvGrd    0.011331
+
+Sample Predictions (First 5):
+  Id  SalePrice
+1461  127014.00
+1462  154397.00
+1463  183048.21
+1464  183064.50
+1465  198047.12

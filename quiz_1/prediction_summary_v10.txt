@@ -1,0 +1,4 @@
+=== House Price Prediction V10 (The Final Blend) ===
+Strategy: Submission Blending (Ensemble of Ensembles).
+Formula: (0.6 * V3_Simple) + (0.4 * V8_Complex)
+Rationale: Combining the low-variance V3 with the high-bias V8 to minimize error.

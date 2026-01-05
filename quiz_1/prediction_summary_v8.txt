@@ -1,0 +1,3 @@
+=== House Price Prediction V8 (The Final Truth) ===
+Strategy: V7 Architecture (Dual Pipeline) + V3 Data (No Outlier Removal).
+Weights: Equal Split (25% each for Lasso, Ridge, GBR, XGB).

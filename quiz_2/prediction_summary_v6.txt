@@ -1,0 +1,5 @@
+=== Titanic V6 (The Imitator: Oblique XGBoost) ===
+Best CV Accuracy: 0.84175
+Best Params: {'n_estimators': 875, 'max_depth': 7, 'learning_rate': 0.012412866805251027, 'subsample': 0.9851753324361814, 'colsample_bytree': 0.7391753595045609, 'gamma': 0.2827671434252517, 'reg_alpha': 4.043798930416074, 'reg_lambda': 3.648361758061688, 'min_child_weight': 8}
+Strategy: Manual Interaction Features + Optuna Tuning
+New Features: Age*Class, Fare/Person, Age*Sex, etc.

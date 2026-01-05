@@ -1,0 +1,9 @@
+=== House Price Prediction V9 (The Surgeon) ===
+Strategy: Smart Imputation + KernelRidge + Robust Ensemble.
+Weights:
+- Lasso: 20%
+- ElasticNet: 20%
+- KernelRidge: 20%
+- GBoost: 15%
+- XGB: 15%
+- LGBM: 10%

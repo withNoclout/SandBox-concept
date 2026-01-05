@@ -1,0 +1,4 @@
+=== Titanic V9 (The Polished Minimalist) ===
+Best LR CV Score: 0.79463
+Strategy: Smart Age Imputation + Tuned LR + Robust RF (1000 Trees)
+Philosophy: High Quality Data + Simple Models
